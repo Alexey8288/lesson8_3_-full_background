@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+margin: 0;
+font-family: Arial;
+
+/* В body НЕЛЬЗЯ вставлять фон, нужно применять отдельно контейнер!!! */
+/* background-color: red;
+background-image: url(../img/image1.jpg);
+background-size: cover;
+background-position: center;
+min-height: 100vh; */
+
+}
+
+.bg-primary {
+background-color: red;
+    background-image: url(../img/image5.jpg),
+    url(../img/image1.jpg);
+    background-size: 200px, cover;
+    /* выключает повтор картинки */
+    background-repeat: no-repeat;
+    /* местоположение картинки */
+    /* background-position: left top,center; */
+        background-position: 2% 3%, center;
+    min-height: 100vh;
+
+    /* фиксирует задний фон на одном месте */
+    position: fixed;
+
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    /* это все заменяет одно свойство */
+    inset: 0;
+    /* ставит фон на задний план */
+    z-index: -1;
+}
+
+
+.container {
+    /* максимальная ширина */
+max-width: 992px;
+/* выравнивание по ширине экрана */
+margin: 0 auto;
+/* внутренние отступы */
+padding: 20px;
+color: white;
+}
