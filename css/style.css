@@ -4,11 +4,11 @@
 
 body {
 
-margin: 0;
-font-family: Arial;
+    margin: 0;
+    font-family: Arial;
 
-/* В body НЕЛЬЗЯ вставлять фон, нужно применять отдельно контейнер!!! */
-/* background-color: red;
+    /* В body НЕЛЬЗЯ вставлять фон, нужно применять отдельно контейнер!!! */
+    /* background-color: red;
 background-image: url(../img/image1.jpg);
 background-size: cover;
 background-position: center;
@@ -17,15 +17,15 @@ min-height: 100vh; */
 }
 
 .bg-primary {
-background-color: red;
+    background-color: red;
     background-image: url(../img/image5.jpg),
-    url(../img/image1.jpg);
+        url(../img/image1.jpg);
     background-size: 200px, cover;
     /* выключает повтор картинки */
     background-repeat: no-repeat;
     /* местоположение картинки */
     /* background-position: left top,center; */
-        background-position: 2% 3%, center;
+    background-position: 2% 3%, center;
     min-height: 100vh;
 
     /* фиксирует задний фон на одном месте */
@@ -41,13 +41,23 @@ background-color: red;
     z-index: -1;
 }
 
+.bg-overlay {
+    position: fixed;
+    /* !полностью заменяет left 0, right 0, top 0, bottom 0 */
+    inset: 0;
+
+    z-index: -1;
+    background-color: black;
+    /* !степень просвечивания */
+    opacity: 0.5;
+}
 
 .container {
     /* максимальная ширина */
-max-width: 992px;
-/* выравнивание по ширине экрана */
-margin: 0 auto;
-/* внутренние отступы */
-padding: 20px;
-color: white;
+    max-width: 992px;
+    /* выравнивание по ширине экрана */
+    margin: 0 auto;
+    /* внутренние отступы */
+    padding: 20px;
+    color: white;
 }
